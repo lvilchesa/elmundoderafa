@@ -18,6 +18,8 @@
 ## Datos para la migración (fase 0)
 - DNS: Bluehost, sin DNSSEC, IP 162.241.216.59 (misma cuenta que el hotel y Syman).
 - **Correo:** `contacto@elmundoderafa.cl` es **solo un reenvío** en Bluehost → **jamb33@gmail.com y yoanaroa@gmail.com** (dos destinos). Pasa a Cloudflare Email Routing. **Las dos casillas tienen que hacer clic en la verificación de Cloudflare.** Hay que confirmar si una regla acepta dos destinos; si no, un Email Worker.
+- **Zona limpiada el 25-sep-2026:** quedan dominio, `www`, `mail.`, MX (→ `mail.`) y DMARC; se borraron 23 restos de cPanel, incluido un segundo MX al dominio principal. Respaldo en `MigracionDNS/respaldos/elmundoderafa.cl_20260925-171326.json`.
+- **Email Routing:** es independiente de GitHub. Conviene **no dejarlo para el final**, porque recibe las cotizaciones. Orden: registrar las dos casillas → esperar a que las dos verifiquen → activar.
 - **Formulario de cotización:** FormSubmit → `contacto@elmundoderafa.cl`. Sigue funcionando en GitHub Pages (es un servicio externo), **siempre que el reenvío de `contacto@` exista**: Email Routing tiene que quedar activo antes de cancelar Bluehost.
 - DMARC `p=none`; sin SPF propio.
 
