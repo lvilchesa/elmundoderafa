@@ -10,7 +10,7 @@
 
 ## ▶ Punto de retomada
 
-**Estado:** la copia local es **idéntica al sitio publicado** (comprobado archivo por archivo el 25-sep-2026: `index.html`, `styles.css`, `tarifas.json` y 59 imágenes). Se hizo una limpieza sin cambios visibles. **Fase 1 lista:** subido y publicado en https://lvilchesa.github.io/elmundoderafa/ (probado: tarifas, 10 tarjetas, galería con las 44 fotos en sus 3 grupos, sin errores). **Siguiente: fase 2**, Gonzalo agrega `elmundoderafa.cl` en Cloudflare y Claude arma el molde. Ver `PROTOCOLO-MIGRACION-GHPAGES.md`.
+**Estado:** la copia local es **idéntica al sitio publicado** (comprobado archivo por archivo el 25-sep-2026: `index.html`, `styles.css`, `tarifas.json` y 59 imágenes). Se hizo una limpieza sin cambios visibles. **Fase 1 lista:** subido y publicado en https://lvilchesa.github.io/elmundoderafa/ (probado: tarifas, 10 tarjetas, galería con las 44 fotos en sus 3 grupos, sin errores). **Fase 2 lista:** zona en Cloudflare, el molde calza con Bluehost (29 importados; 16 pasados de Proxied a DNS only; `localhost` borrado; respaldo en `MigracionDNS/respaldos/elmundoderafa.cl_20260925-155138.json`). **Siguiente: fase 3**, cambiar los servidores DNS en NIC.cl a **`venkat.ns.cloudflare.com`** y **`vita.ns.cloudflare.com`**. Ver `PROTOCOLO-MIGRACION-GHPAGES.md`.
 
 **Para editar precios:** solo `assets/data/tarifas.json` (las tarjetas se generan desde ahí).
 **Para agregar fotos a la galería:** `assets/img/galeria/galeria_NNN.jpeg` + actualizar `const totalFotos` al final de `index.html`.
