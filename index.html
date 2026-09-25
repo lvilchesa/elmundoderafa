@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Mundo de Rafa - Juegos para tus fiestas y aventos</title>
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- NAVEGACIÓN -->
+    <!-- INSTRUCCIONES: Mantener la estructura. Solo actualizar el nombre de la empresa si cambia -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#inicio">
+                <!-- INSTRUCCIONES LOGO: El logo actual está en assets/img/logo.jpeg -->
+                <img src="assets/img/logo-png.png" alt="Logo El Mundo de Rafa" height="100" class="me-2">
+                <span class="fw-bold">El Mundo de Rafa</span>
+            </a>
+            
+            <!-- Logo patrocinador estatal (visible solo en móvil entre logo empresa y hamburger) -->
+            <div class="logo-patrocinador-mobile d-lg-none">
+                <!-- Logo SERCOTEC Negro para navbar móvil -->
+                <img src="assets/img/Logo_Sercotec-SolidBlack.png" alt="Logo Patrocinador SERCOTEC" height="100">
+            </div>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tarifas">Tarifas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            
+            <!-- Logo patrocinador estatal (visible solo en desktop a la derecha) -->
+            <div class="logo-patrocinador-desktop d-none d-lg-block">
+                <!-- Logo SERCOTEC Negro para navbar desktop -->
+                <img src="assets/img/Logo_Sercotec-SolidBlack.png" alt="Proyecto Apoyado por SERCOTEC" height="100">
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECCIÓN HERO -->
+    <!-- INSTRUCCIONES: Actualizar el título principal, subtítulo y texto del botón según preferencia del cliente -->
+    <section id="inicio" class="hero-section">
+            <div class="logo-patrocinador-hero mt-4">
+                <img src="assets/img/logo-png.png" alt="Logo El Mundo de Rafa" class="img-fluid">
+            </div>
+			<div class="container text-center text-white">
+				<h1 class="display-3 fw-bold mb-4">El Mundo de Rafa</h1>
+				<p class="lead mb-4"><strong>¡Diversión Garantizada!</strong></p>
+				<p class="lead mb-4">Los mejores inflables - camas elásticas - taca taca para tu fiesta o evento</p>
+				<a href="#contacto" class="btn btn-lg btn-warning px-5">Solicitar Cotización</a>
+            <!-- Logo patrocinador estatal en Hero -->
+            <!-- Logo SERCOTEC Blanco para Hero -->
+            <div class="logo-patrocinador-hero mt-4">
+                <img src="assets/img/Logo_Sercotec-SolidWhite.png" height="1000"   alt="Proyecto apoyado por SERCOTEC" class="img-fluid">
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN NOSOTROS -->
+    <!-- INSTRUCCIONES: Reemplazar el texto con la información real de la empresa proporcionada por el cliente -->
+    <section id="nosotros" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="display-5 fw-bold mb-4">Sobre Nosotros</h2>
+                    <p align="center">En El Mundo de Rafa, creemos que cada celebración es una oportunidad para crear recuerdos inolvidables.</p>
+                    <p class="lead" align="justify">Llevamos la diversión a tu fiesta o evento, nos especializamos en el arriendo de juegos inflables, camas elásticas y taca taca, para todo tipo de eventos.<BR>Nos define la puntualidad, la limpieza de nuestros juegos y una atención personalizada que garantiza el éxito de tu fiesta. Desde el montaje hasta el retiro, nos encargamos de todo para que tú solo te preocupes de disfrutar.</p>
+                    <div class="row mt-4">
+                        <div class="col-md-6 mb-3">
+                            <i class="bi bi-check-circle-fill text-primary me-2"></i>Equipos certificados
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <i class="bi bi-check-circle-fill text-primary me-2"></i>Instalación profesional
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <i class="bi bi-check-circle-fill text-primary me-2"></i>Limpieza garantizada
+						</div>
+                        <div class="col-md-6 mb-3">
+                            <i class="bi bi-check-circle-fill text-primary me-2"></i>Variedad de modelos
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <!-- INSTRUCCIONES: Reemplazar con imagen representativa de la empresa -->
+                    <img src="assets/img/galeria_027.jpeg?w=600" alt="Niños jugando" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN GALERÍA -->
+    <!-- INSTRUCCIONES GALERÍA:
+         1. Reemplazar las imágenes: Coloca tus fotos en una carpeta llamada "imagenes" o "img"
+         2. Nombra las fotos como: galeria_001.jpg, galeria_002.jpg, galeria_003.jpg, etc.
+         3. Actualiza la variable totalFotos en el JavaScript al final (línea que dice: const totalFotos = 60;)
+         4. Las fotos se mostrarán en grupos de 15 (3 filas x 5 columnas)
+         5. El carrusel cambia automáticamente cada 6 segundos
+         6. Los usuarios pueden navegar manualmente con los botones o hacer clic en las fotos
+    -->
+    <section id="galeria" class="py-5 bg-light">
+        <div class="container">
+              <h2 class="display-5 fw-bold text-center mb-4">Galería de Imágenes</h2>
+            <p class="text-center text-muted mb-5">Explora nuestra galería de inflables, camas elásticas y taca-taca. Diversión para todas las edades</p>
+            
+            <!-- Controles del carrusel -->
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <button class="btn btn-primary" id="prevGroup">
+                    <i class="bi bi-chevron-left"></i> Anterior
+                </button>
+                <div class="gallery-indicators" id="galleryIndicators">
+                    <!-- Los indicadores se generarán dinámicamente -->
+                </div>
+                <button class="btn btn-primary" id="nextGroup">
+                    Siguiente <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+
+            <!-- Grid de galería (3 filas x 5 columnas = 15 fotos por grupo) -->
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Las imágenes se cargarán dinámicamente aquí -->
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL PARA VER IMAGEN EN GRANDE -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body text-center p-0">
+                    <img src="" alt="Vista ampliada" id="modalImage" class="img-fluid rounded">
+                    <div class="mt-3">
+                        <button class="btn btn-light me-2" id="prevImage">
+                            <i class="bi bi-chevron-left"></i> Anterior
+                        </button>
+                        <button class="btn btn-light" id="nextImage">
+                            Siguiente <i class="bi bi-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================================================================ -->
+    <!-- SECCIÓN TARIFAS                                                    -->
+    <!-- ⚠️  DATOS: Editar assets/data/tarifas.json — NO modificar este HTML -->
+    <!-- ================================================================ -->
+    <section id="tarifas" class="py-5">
+        <div class="container">
+            <h2 class="display-5 fw-bold text-center mb-2">Nuestras Tarifas</h2>
+            <p class="text-center text-muted mb-5"><strong style="text-transform:uppercase;">Valores por día</strong> · Válidos dentro de Los Ángeles · Para otros sectores, solicitar cotización</p>
+
+            <!-- ── JUEGOS INDIVIDUALES ─────────────────────────────────── -->
+            <h4 class="text-center mb-4 tarifas-subtitulo">Juegos Individuales</h4>
+            <div class="row justify-content-center" id="juegos-individuales">
+                <!-- Generado dinámicamente desde tarifas.json -->
+            </div>
+
+            <!-- ── KITS CUMPLEAÑOS ────────────────────────────────────── -->
+            <h4 class="text-center mb-4 mt-5 tarifas-subtitulo">Kits Cumpleaños</h4>
+            <div class="row justify-content-center" id="kits-cumpleanos">
+                <!-- Generado dinámicamente desde tarifas.json -->
+            </div>
+
+            <!-- ── NOTA GENERAL ───────────────────────────────────────── -->
+            <div class="nota-tarifas text-center mt-4" id="nota-tarifas">
+                <!-- Generado dinámicamente desde tarifas.json -->
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL IMAGEN TARIFAS -->
+    <div class="modal fade" id="modalTarifa" tabindex="-1" aria-labelledby="modalTarifaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-header border-0 pb-0">
+                    <h6 class="modal-title text-white fw-bold" id="modalTarifaLabel"></h6>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center p-2">
+                    <img src="" alt="" id="modalTarifaImg" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCIÓN CONTACTO -->
+    <!-- INSTRUCCIONES: Actualizar TODOS los datos de contacto con la información real del cliente:
+         - Dirección completa
+         - Número de teléfono
+         - Email de contacto
+         - Horarios de atención
+         - Enlaces a redes sociales (reemplazar "#" con URLs reales) -->
+    <section id="contacto" class="py-5">
+        <div class="container">
+            <h2 class="display-5 fw-bold text-center mb-5">Contáctanos</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card shadow-sm h-100 contact-info-card">
+                        <div class="card-body">
+                            <h4 class="card-title mb-4">Información de Contacto</h4>
+                            <div class="mb-3">
+                                <i class="bi bi-geo-alt-fill text-primary me-2"></i>
+                                <strong>Dirección:</strong><br>
+                                <span class="ms-4">Bulnes 770, Los Ángeles - Chile</span>
+                            </div>
+                            <div class="mb-3">
+                                <i class="bi bi-telephone-fill text-primary me-2"></i>
+                                <strong>Teléfono:</strong><br>
+                                <span class="ms-4">+56 9 8740 2544 / +56 9 9091 5261</span>
+                            </div>
+                            <div class="mb-3">
+                                <i class="bi bi-envelope-fill text-primary me-2"></i>
+                                <strong>Email:</strong><br>
+                                <span class="ms-4">contacto@elmundoderafa.cl</span>
+                            </div>
+							<div class="mb-3">
+							     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3166.4340331341036!2d-72.36136372344686!3d-37.474082814702435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x966bdd3690c1a8f7%3A0xa733399a2190d245!2sBulnes%20770%2C%204430164%20Los%20Angeles%2C%20Los%20%C3%81ngeles%2C%20B%C3%ADo%20B%C3%ADo!5e0!3m2!1ses-419!2scl!4v1770157258402!5m2!1ses-419!2scl" width="100%" height="400" style="border: 1" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <p></p>
+							</div>
+                            <!-- <div class="mb-4">
+                                <i class="bi bi-clock-fill text-primary me-2"></i>
+                                <strong>Horario:</strong><br>
+                                <span class="ms-4">Lunes a Viernes: 9:00 AM - 6:00 PM<br>
+                                Sábados: 9:00 AM - 2:00 PM</span>
+                            </div> -->
+                            <!-- <h5 class="mb-3">Síguenos en Instagram</h5>
+                            <div class="social-icons">
+                                <a href="#" class="btn btn-outline-primary btn-sm me-2"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="btn btn-outline-info btn-sm me-2"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="btn btn-outline-success btn-sm"><i class="bi bi-whatsapp"></i></a>
+                            </div> -->
+                            
+                            <!-- Código QR Instagram -->
+                            <div class="instagram-qr mt-4">
+                                <h6 class="mb-3 text-muted">Escanea y síguenos en Instagram<br></h6>
+                                <div class="qr-container">
+								    <p></p>
+                                    <img src="assets/img/qr-ig.jpeg" alt="QR Instagram @elmundoderafa6" class="img-fluid"><p></p>
+                                </div>
+							</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body">
+                            <h4 class="card-title mb-4">Solicitud de Cotización</h4>
+                            <!-- INSTRUCCIONES FORMULARIO: 
+                                 Este formulario usa FormSubmit para enviar emails.
+                                 Los datos se envían a contacto@elmundoderafa.cl
+                                 
+                                 IMPORTANTE: La primera vez que recibas un email, FormSubmit te pedirá
+                                 que confirmes tu dirección de correo haciendo clic en un enlace.
+                                 
+                                 Configuración actual:
+                                 - Email destino: contacto@elmundoderafa.cl
+                                 - Página de agradecimiento: Vuelve a la página principal
+                                 - Captcha: Desactivado (puedes activarlo quitando el input hidden)
+                            -->
+                            <form action="https://formsubmit.co/contacto@elmundoderafa.cl" method="POST">
+                                <!-- Configuraciones de FormSubmit -->
+                                <input type="hidden" name="_subject" value="Solicitud de Cotizacion - El Mundo de Rafa">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_template" value="table">
+                                <input type="text" name="_honey" style="display:none">
+                                <div class="mb-3">
+                                    <label for="servicio" class="form-label">Servicio Solicitado</label>
+                                    <select class="form-control" id="servicio" name="servicio" required>
+                                        <option value="">Seleccione un servicio...</option>
+                                        <option value="Taca Taca Adulto">Taca Taca Adulto</option>
+                                        <option value="Tobogán Inflable M">Tobogán Inflable M</option>
+                                        <option value="Tobogán Inflabre XL">Tobogán Inflable XL</option>
+                                        <option value="Cama Elástica 2mt">Cama Elástica 2mt</option>
+                                        <option value="Cama Elástica 5mt">Cama Elástica 5mt</option>
+                                        <option value="Kit 1 - Taca Taca + Cama Elastica 2mt">Kit 1 - Taca Taca + Cama Elastica 2mt</option>
+                                        <option value="Kit 2 - Taca Taca + Cama Elastica 2mt + Inflable M">Kit 2 - Taca Taca + Cama Elastica 2mt + Inflable M</option>
+                                        <option value="Kit 3 - Taca Taca + Cama Elastica 2mt + Inflable XL">Kit 3 - Taca Taca + Cama Elastica 2mt + Inflable XL</option>
+									    <option value="Otro">Otro (especificar en mensaje)</option>
+                                    </select>
+                                    <small class="text-muted">Seleccione el servicio que necesita</small>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="fechaInicio" class="form-label">Fecha Evento</label>
+                                        <input type="date" class="form-control" id="fechaInicio" name="fecha_inicio" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="horaInicio" class="form-label">Hora Inicio</label>
+                                        <input type="time" class="form-control" id="horaInicio" name="hora_inicio" required>
+                                    </div>
+                                   <!-- <div class="col-md-6 mb-3">
+                                        <label for="fechaTermino" class="form-label">Fecha Término</label>
+                                        <input type="date" class="form-control" id="fechaTermino" name="fecha_termino" required>
+                                    </div> -->
+                                    <div class="col-md-6 mb-3">
+                                        <label for="horaTermino" class="form-label">Hora Término</label>
+                                        <input type="time" class="form-control" id="horaTermino" name="hora_termino" required>
+                                    </div>
+                                </div>
+                                <label for="nombre" class="form-label">Nombre Contacto</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ej: Juan Pérez González" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="direccion" class="form-label">Dirección del Evento</label>
+                                    <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Calle, número, comuna" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Correo Contacto</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="telefono" class="form-label">Teléfono Contacto</label>
+                                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="+56 9 1234 5678" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="mensaje" class="form-label">Información Adicional (Opcional)</label>
+                                    <textarea class="form-control" id="mensaje" name="informacion_adicional" rows="3" placeholder="Detalles adicionales sobre el evento, cantidad de niños, etc."></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100"><i class="bi bi-calendar-check me-2"></i>Enviar Solicitud de Cotización</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <!-- INSTRUCCIONES: Actualizar el año y nombre de la empresa si es necesario -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0"><small>&copy; 2026 El Mundo de Rafa. Todos los derechos reservados.<br>Desarrollo y Soporte Vyasa SpA - Hosting SomosWeb</small><br>Proyecto Apoyado por Sercotec </small></p>	
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ================================================================ -->
+    <!-- SCRIPT DE TARIFAS                                                  -->
+    <!-- Lee tarifas.json y genera las cards automáticamente               -->
+    <!-- Para cambiar precios/productos: editar assets/data/tarifas.json    -->
+    <!-- ================================================================ -->
+    <script>
+        async function cargarTarifas() {
+            try {
+                // Cargar el JSON — si cambias la ruta del archivo, actualizar aquí
+                const res = await fetch('assets/data/tarifas.json');
+                if (!res.ok) throw new Error('No se pudo cargar tarifas.json');
+                const data = await res.json();
+
+                // Formato de precio — usa el símbolo y moneda definidos en el JSON
+                const fmt = (n) => data.simbolo + n.toLocaleString('es-CL');
+
+                // ── JUEGOS INDIVIDUALES ────────────────────────────────
+                // Cada juego se convierte en una card col-md-4 col-sm-6
+                const contJuegos = document.getElementById('juegos-individuales');
+                data.juegos_individuales.forEach(juego => {
+                    const dimensiones = juego.dimensiones
+                        ? `<p class="card-text text-muted small mb-1"><i class="bi bi-rulers me-1"></i><strong>Dimensiones:</strong> ${juego.dimensiones}</p>`
+                        : '';
+                    const periodo = juego.periodo
+                        ? `<span class="badge bg-secondary ms-1">${juego.periodo}</span>`
+                        : '';
+
+                    const imgHTML = juego.imagen
+                        ? `<div class="tarifa-img-wrap" onclick="abrirModalTarifa('${juego.imagen}', '${juego.nombre}')"
+                               title="Ver imagen ampliada" style="cursor:pointer;">
+                               <img src="${juego.imagen}" alt="${juego.nombre}" class="tarifa-img">
+                               <div class="tarifa-img-overlay"><i class="bi bi-zoom-in"></i></div>
+                           </div>`
+                        : `<div class="tarifa-card-header-icon"><i class="bi ${juego.icono || 'bi-star'} fs-1"></i></div>`;
+
+                    contJuegos.innerHTML += `
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="card tarifa-card h-100 text-center shadow-sm">
+                                ${imgHTML}
+                                <div class="tarifa-card-header">
+                                    <h5 class="mb-0">${juego.nombre}</h5>
+                                </div>
+                                <div class="card-body d-flex flex-column justify-content-center">
+                                    ${dimensiones}
+                                    <p class="precio-destacado mt-2 mb-0">${fmt(juego.precio)} ${periodo}</p>
+                                </div>
+                            </div>
+                        </div>`;
+                });
+
+                // ── KITS CUMPLEAÑOS ───────────────────────────────────
+                // Cada kit se convierte en una card col-md-4; el destacado tiene clase extra
+                const contKits = document.getElementById('kits-cumpleanos');
+                data.kits_cumpleanos.forEach(kit => {
+                    const items = kit.incluye
+                        .map(item => `<li><i class="bi bi-check-circle-fill text-success me-2"></i>${item}</li>`)
+                        .join('');
+                    const claseDestacado = kit.destacado ? ' kit-destacado' : '';
+
+                    contKits.innerHTML += `
+                        <div class="col-md-4 mb-4">
+                            <div class="card tarifa-card h-100 text-center shadow-sm${claseDestacado}">
+                                <div class="card-header tarifa-card-header">
+                                    <h5 class="mb-0">${kit.nombre}</h5>
+                                    <small class="opacity-75">${kit.subtitulo}</small>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="list-unstyled text-start mb-3">${items}</ul>
+                                    <p class="precio-destacado mb-0">${fmt(kit.precio)}</p>
+                                </div>
+                            </div>
+                        </div>`;
+                });
+
+                // ── NOTA GENERAL ──────────────────────────────────────
+                document.getElementById('nota-tarifas').innerHTML = `
+                    <div class="nota-especial d-inline-block">
+                        <i class="bi bi-info-circle-fill me-2 text-warning"></i>
+                        ${data.nota_general.replace('Valores por d\u00eda', '<strong style="text-transform:uppercase;">Valores por d\u00eda</strong>')}
+                    </div>`;
+
+            } catch (err) {
+                // Mensaje de error visible si el JSON no carga (ej: abrir HTML sin servidor)
+                console.error('Error al cargar tarifas:', err);
+                document.getElementById('juegos-individuales').innerHTML =
+                    '<p class="text-danger text-center w-100">No se pudieron cargar las tarifas. Asegúrate de ejecutar la página desde un servidor (no directo desde archivo).</p>';
+            }
+        }
+
+        // ── MODAL PARA IMAGEN DE TARIFA ────────────────────────────────
+        function abrirModalTarifa(src, titulo) {
+            document.getElementById('modalTarifaImg').src = src;
+            document.getElementById('modalTarifaLabel').textContent = titulo;
+            new bootstrap.Modal(document.getElementById('modalTarifa')).show();
+        }
+
+        // Ejecutar al cargar el DOM
+        document.addEventListener('DOMContentLoaded', cargarTarifas);
+    </script>
+    
+    <!-- SCRIPT DE GALERÍA -->
+    <!-- INSTRUCCIONES: 
+         1. Actualizar la variable totalFotos con el número real de fotos que tengas
+         2. Actualizar la variable rutaImagenes con la ruta donde están tus fotos
+         3. Las fotos deben nombrarse: galeria_001.jpg, galeria_002.jpg, etc.
+         4. Si tus fotos tienen otra extensión (.png, .jpeg), cambiar la variable extension
+    -->
+    <script>
+        // ========== CONFIGURACIÓN DE LA GALERÍA ==========
+        const totalFotos = 44;  // CAMBIAR: Número total de fotos que tienes
+		const mostrarNuevasPrimero = true;  // true = fotos nuevas primero, false = orden normal
+        const fotosPorGrupo = 15;  // 3 filas x 5 columnas = 15 fotos por página
+        const rutaImagenes = 'assets/img/galeria/';  // CAMBIAR: Ruta donde están tus fotos
+        const extension = '.jpeg';  // CAMBIAR si tus fotos son .png o .jpeg
+        const intervaloCarrusel = 6000;  // 6 segundos
+        
+        // ========== VARIABLES GLOBALES ==========
+        let grupoActual = 0;
+        let imagenActualModal = 0;
+        let intervaloAuto;
+        const totalGrupos = Math.ceil(totalFotos / fotosPorGrupo);
+        
+        // ========== FUNCIÓN PARA GENERAR NOMBRE DE ARCHIVO ==========
+        function getNombreImagen(numero) {
+            const numeroFormateado = String(numero).padStart(3, '0');
+            return `${rutaImagenes}galeria_${numeroFormateado}${extension}`;
+        }
+        
+        // ========== FUNCIÓN PARA CARGAR GRUPO DE IMÁGENES ==========
+        function cargarGrupo(numeroGrupo) {
+            const galleryGrid = document.getElementById('galleryGrid');
+            galleryGrid.innerHTML = '';
+            
+            const inicio = numeroGrupo * fotosPorGrupo;
+            const fin = Math.min(inicio + fotosPorGrupo, totalFotos);
+            
+			for (let i = inicio; i < fin; i++) {
+				// Invertir el índice para mostrar fotos nuevas primero
+				const indice = mostrarNuevasPrimero ? (totalFotos - 1 - i) : i;
+				
+				const imagenDiv = document.createElement('div');
+				imagenDiv.className = 'gallery-item';
+				imagenDiv.innerHTML = `
+					<img src="${getNombreImagen(indice + 1)}" 
+						 alt="Juego inflable ${indice + 1}" 
+						 data-index="${indice}"
+                         onerror="this.src='https://via.placeholder.com/400x300/FF6B6B/FFFFFF?text=Foto+${indice + 1}'"
+                         loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="bi bi-zoom-in"></i>
+                    </div>
+                `;
+                
+                // Agregar evento click para abrir modal
+                imagenDiv.addEventListener('click', () => abrirModal(indice));
+                
+                galleryGrid.appendChild(imagenDiv);
+            }
+            
+            // Actualizar indicadores
+            actualizarIndicadores();
+        }
+        
+        // ========== FUNCIÓN PARA ACTUALIZAR INDICADORES ==========
+        function actualizarIndicadores() {
+            const indicadores = document.getElementById('galleryIndicators');
+            indicadores.innerHTML = '';
+            
+            for (let i = 0; i < totalGrupos; i++) {
+                const indicator = document.createElement('button');
+                indicator.className = `indicator ${i === grupoActual ? 'active' : ''}`;
+                indicator.setAttribute('aria-label', `Grupo ${i + 1}`);
+                indicator.addEventListener('click', () => {
+                    grupoActual = i;
+                    cargarGrupo(grupoActual);
+                });
+                indicadores.appendChild(indicator);
+            }
+        }
+        
+        // ========== NAVEGACIÓN ENTRE GRUPOS ==========
+        function siguienteGrupo() {
+            grupoActual = (grupoActual + 1) % totalGrupos;
+            cargarGrupo(grupoActual);
+        }
+        
+        function anteriorGrupo() {
+            grupoActual = (grupoActual - 1 + totalGrupos) % totalGrupos;
+            cargarGrupo(grupoActual);
+        }
+        
+        // ========== AUTOPLAY DEL CARRUSEL (DESACTIVADO) ==========
+        function iniciarAutoplay() {
+            // Autoplay desactivado
+        }
+        
+        function detenerAutoplay() {
+            // Autoplay desactivado
+        }
+        
+        function reiniciarAutoplay() {
+            // Autoplay desactivado
+        }
+        
+        // ========== MODAL DE IMAGEN GRANDE ==========
+        function abrirModal(indice) {
+            imagenActualModal = indice;
+            const modal = new bootstrap.Modal(document.getElementById('imageModal'));
+            actualizarImagenModal();
+            modal.show();
+            detenerAutoplay();
+        }
+        
+        function actualizarImagenModal() {
+            const modalImage = document.getElementById('modalImage');
+            modalImage.src = getNombreImagen(imagenActualModal + 1);
+            modalImage.onerror = function() {
+                this.src = `https://via.placeholder.com/800x600/FF6B6B/FFFFFF?text=Foto+${imagenActualModal + 1}`;
+            };
+        }
+        
+        function siguienteImagenModal() {
+            imagenActualModal = (imagenActualModal + 1) % totalFotos;
+            actualizarImagenModal();
+        }
+        
+        function anteriorImagenModal() {
+            imagenActualModal = (imagenActualModal - 1 + totalFotos) % totalFotos;
+            actualizarImagenModal();
+        }
+        
+        // ========== EVENT LISTENERS ==========
+        document.addEventListener('DOMContentLoaded', function() {
+            // Cargar primer grupo
+            cargarGrupo(0);
+            
+            // Autoplay desactivado
+            // iniciarAutoplay();
+            
+            // Botones de navegación de grupos
+            document.getElementById('prevGroup').addEventListener('click', () => {
+                anteriorGrupo();
+            });
+            
+            document.getElementById('nextGroup').addEventListener('click', () => {
+                siguienteGrupo();
+            });
+            
+            // Botones de navegación en modal
+            document.getElementById('prevImage').addEventListener('click', anteriorImagenModal);
+            document.getElementById('nextImage').addEventListener('click', siguienteImagenModal);
+            
+            // Modal cerrado (autoplay desactivado)
+            document.getElementById('imageModal').addEventListener('hidden.bs.modal', () => {
+                // No reiniciar autoplay
+            });
+            
+            // Navegación con teclado en modal
+            document.addEventListener('keydown', (e) => {
+                const modal = document.getElementById('imageModal');
+                if (modal.classList.contains('show')) {
+                    if (e.key === 'ArrowLeft') anteriorImagenModal();
+                    if (e.key === 'ArrowRight') siguienteImagenModal();
+                }
+            });
+            
+            // Eventos de mouse desactivados (autoplay desactivado)
+            // const gallerySection = document.getElementById('galeria');
+            // gallerySection.addEventListener('mouseenter', detenerAutoplay);
+            // gallerySection.addEventListener('mouseleave', iniciarAutoplay);
+        });
+    </script>
+</body>
+</html>

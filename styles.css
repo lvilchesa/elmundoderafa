@@ -1,0 +1,690 @@
+/* ============================================
+   ARCHIVO CSS - JUEGOS INFLABLES INFANTILES
+   ============================================ */
+
+/* INSTRUCCIONES GENERALES:
+   - Los colores principales están definidos en :root
+   - Para cambiar la paleta de colores, modificar las variables CSS
+   - Colores actuales: Azul primario, Naranja secundario, Rosa/Rojo acentos
+   - Estos colores son alegres y apropiados para eventos infantiles
+*/
+
+:root {
+    --color-primario: #4A90E2;      /* Azul vibrante */
+    --color-secundario: #FF9500;    /* Naranja energético */
+    --color-acento: #FF6B6B;        /* Rosa/Rojo alegre */
+    --color-exito: #5CB85C;         /* Verde */
+    --color-texto: #333333;
+    --color-texto-claro: #666666;
+    --color-fondo: #F8F9FA;
+}
+
+/* ESTILOS GLOBALES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--color-texto);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* NAVEGACIÓN */
+/* INSTRUCCIONES: Si el cliente prefiere un color diferente para el navbar,
+   modificar la clase bg-white en el HTML o agregar background-color aquí */
+.navbar {
+    padding: 0.75rem 0;
+    transition: all 0.3s ease;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    color: var(--color-primario) !important;
+    font-weight: 700;
+}
+
+.navbar-brand:hover {
+    color: var(--color-secundario) !important;
+}
+
+/* Menu centrado en desktop */
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.nav-link {
+    color: var(--color-texto) !important;
+    font-weight: 500;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--color-primario) !important;
+}
+
+/* Logo patrocinador desktop - a la derecha */
+.logo-patrocinador-desktop {
+    margin-left: auto;
+}
+
+.logo-patrocinador-desktop img {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Logo patrocinador móvil - entre logo empresa y hamburger */
+.logo-patrocinador-mobile {
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+.logo-patrocinador-mobile img {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Responsive para móvil */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        margin-top: 1rem;
+    }
+}
+
+/* SECCIÓN HERO */
+/* INSTRUCCIONES: Para cambiar la imagen de fondo, reemplazar la URL en background-image
+   con la imagen proporcionada por el cliente */
+.hero-section {
+    background: linear-gradient(135deg, var(--color-primario) 0%, var(--color-acento) 100%);
+    background-image: 
+        linear-gradient(rgba(74, 144, 226, 0.85), rgba(255, 107, 107, 0.85)),
+        url('https://images.unsplash.com/photo-1519340241574-2cec6aef0c01?w=1200');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 180px 0 120px 0;
+    margin-top: 76px;
+    position: relative;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 1s ease;
+}
+
+.hero-section p {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 1.2s ease;
+}
+
+/* Logo patrocinador en Hero - debajo del botón */
+.logo-patrocinador-hero {
+    display: block;
+    text-align: center;
+    background: transparent;
+    padding: 0;
+    margin-top: 3rem;
+}
+
+.logo-patrocinador-hero img {
+    max-width: 150px;
+    height: auto;
+    opacity: 0.95;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+    transition: all 0.3s ease;
+}
+
+.logo-patrocinador-hero img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* BOTONES */
+/* INSTRUCCIONES: Los colores de botones pueden ajustarse modificando las clases btn-warning, btn-primary, etc. */
+.btn {
+    border-radius: 50px;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-warning {
+    background-color: var(--color-secundario);
+    color: white;
+}
+
+.btn-warning:hover {
+    background-color: #E68600;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 149, 0, 0.4);
+}
+
+.btn-primary {
+    background-color: var(--color-primario);
+}
+
+.btn-primary:hover {
+    background-color: #3A7BC8;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(74, 144, 226, 0.4);
+}
+
+/* SECCIÓN NOSOTROS */
+#nosotros {
+    padding: 80px 0;
+}
+
+#nosotros h2 {
+    color: var(--color-primario);
+    margin-bottom: 2rem;
+}
+
+#nosotros .lead {
+    color: var(--color-texto-claro);
+    font-size: 1.25rem;
+}
+
+#nosotros img {
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+#nosotros img:hover {
+    transform: scale(1.05);
+}
+
+/* ICONOS DE CARACTERÍSTICAS */
+.bi-check-circle-fill {
+    font-size: 1.2rem;
+}
+
+/* SECCIÓN GALERÍA */
+/* INSTRUCCIONES GALERÍA:
+   - Layout: 5 columnas en desktop, 3 en tablet, 2 en móvil
+   - Para cambiar el espaciado entre fotos, modificar gap en .gallery-grid
+   - Para cambiar el color del overlay, modificar background en .gallery-overlay
+   - Las animaciones pueden desactivarse comentando las líneas de transition y transform
+*/
+#galeria {
+    padding: 80px 0;
+}
+
+#galeria h2 {
+    color: var(--color-primario);
+}
+
+/* Grid de galería - 5 columnas (3 filas x 5 columnas = 15 fotos) */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin-bottom: 2rem;
+}
+
+/* Items individuales de la galería */
+.gallery-item {
+    position: relative;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Overlay con icono de zoom */
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(74, 144, 226, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.gallery-overlay i {
+    color: white;
+    font-size: 3rem;
+    animation: zoomPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes zoomPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+/* Indicadores de página (puntitos) */
+.gallery-indicators {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0;
+}
+
+.indicator:hover {
+    background-color: #bbb;
+    transform: scale(1.2);
+}
+
+.indicator.active {
+    background-color: var(--color-primario);
+    width: 30px;
+    border-radius: 6px;
+}
+
+/* Modal para imagen grande */
+#imageModal .modal-content {
+    background: rgba(0, 0, 0, 0.95) !important;
+}
+
+#imageModal .modal-body img {
+    max-height: 80vh;
+    width: auto;
+    margin: 0 auto;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+#imageModal .btn-close {
+    filter: brightness(0) invert(1);
+    opacity: 1;
+}
+
+#imageModal .btn-light {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: none;
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+#imageModal .btn-light:hover {
+    background-color: white;
+    transform: scale(1.05);
+}
+
+/* RESPONSIVE - GALERÍA */
+/* Tablet: 3 columnas */
+@media (max-width: 992px) {
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+}
+
+/* Móvil: 2 columnas */
+@media (max-width: 576px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .gallery-overlay i {
+        font-size: 2rem;
+    }
+    
+    #galeria h2 {
+        font-size: 2rem;
+    }
+    
+    .gallery-indicators {
+        gap: 6px;
+    }
+    
+    .indicator {
+        width: 8px;
+        height: 8px;
+    }
+    
+    .indicator.active {
+        width: 20px;
+    }
+}
+
+/* SECCIÓN CONTACTO */
+#contacto {
+    padding: 80px 0;
+}
+
+#contacto h2 {
+    color: var(--color-primario);
+}
+
+#contacto .card {
+    border-radius: 15px;
+}
+
+#contacto .card-title {
+    color: var(--color-primario);
+    font-weight: 700;
+}
+
+#contacto i {
+    font-size: 1.3rem;
+}
+
+/* Centrar SOLO la tarjeta de información de contacto */
+.contact-info-card .card-body {
+    text-align: center;
+}
+
+/* FORMULARIO DE CONTACTO */
+.form-control {
+    border-radius: 10px;
+    border: 2px solid #e0e0e0;
+    padding: 0.75rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--color-primario);
+    box-shadow: 0 0 0 0.2rem rgba(74, 144, 226, 0.25);
+}
+
+.form-label {
+    font-weight: 600;
+    color: var(--color-texto);
+}
+
+/* ICONOS DE REDES SOCIALES */
+/* INSTRUCCIONES: Para cambiar los colores de los botones de redes sociales,
+   modificar las clases btn-outline-primary, btn-outline-info, etc. */
+.social-icons a {
+    width: 45px;
+    height: 45px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* CÓDIGO QR INSTAGRAM */
+.instagram-qr {
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 2px solid #f0f0f0;
+}
+
+.instagram-qr h6 {
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.qr-container {
+    display: inline-block;
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(203, 119, 3, 0.15);
+    transition: all 0.3s ease;
+}
+
+.qr-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(203, 119, 3, 0.25);
+}
+
+.qr-container img {
+    max-width: 180px;
+    border-radius: 10px;
+}
+
+.qr-container p {
+    color: var(--color-primario);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* FOOTER */
+footer {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    padding: 2rem 0;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+/* ANIMACIONES */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* SOMBRAS */
+.shadow-sm {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* RESPONSIVE - AJUSTES PARA MÓVILES */
+/* INSTRUCCIONES: Si es necesario ajustar tamaños para móviles,
+   modificar los valores dentro de esta media query */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 120px 0 80px 0;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    #nosotros,
+    #galeria,
+    #contacto {
+        padding: 50px 0;
+    }
+    
+    .card-img-top {
+        height: 200px;
+    }
+    
+    /* Logo patrocinador Hero responsive */
+    .logo-patrocinador-hero img {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-section p {
+        font-size: 1rem;
+    }
+    
+    .btn-lg {
+        padding: 0.5rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    /* Logo patrocinador Hero móvil pequeño */
+    .logo-patrocinador-hero img {
+        max-width: 120px;
+    }
+}
+
+/* ================================================================ */
+/* ESTILOS SECCIÓN TARIFAS                                          */
+/* ================================================================ */
+
+/* Encabezado de cada card (fondo degradado azul-naranja) */
+.tarifa-card-header {
+    background: linear-gradient(135deg, var(--color-primario) 0%, var(--color-secundario) 100%);
+    color: #fff;
+    padding: 1rem;
+}
+
+/* Precio grande y naranja dentro de la card */
+.precio-destacado {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--color-secundario);
+}
+
+/* Card base: sin border-radius cortado en el header */
+.tarifa-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarifa-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Kit destacado: borde naranja + sombra cálida */
+.kit-destacado {
+    border: 2px solid var(--color-secundario) !important;
+    box-shadow: 0 4px 20px rgba(255, 149, 0, 0.25) !important;
+}
+
+/* Título de sub-secciones ("Juegos Individuales", "Kits") */
+.tarifas-subtitulo {
+    color: var(--color-primario);
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.tarifas-subtitulo::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--color-secundario);
+    margin: 0.4rem auto 0;
+    border-radius: 2px;
+}
+
+/* Nota al pie de la sección */
+/* Imagen en card de tarifa con overlay de zoom */
+.tarifa-img-wrap {
+    position: relative;
+    overflow: hidden;
+    max-height: 200px;
+}
+
+.tarifa-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.tarifa-img-wrap:hover .tarifa-img {
+    transform: scale(1.05);
+}
+
+.tarifa-img-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.tarifa-img-wrap:hover .tarifa-img-overlay {
+    opacity: 1;
+}
+
+.nota-especial {
+    background-color: #fff8e1;
+    border-left: 4px solid var(--color-secundario);
+    padding: 0.75rem 1.25rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    text-align: left;
+    display: inline-block;
+}

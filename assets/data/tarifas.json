@@ -1,0 +1,101 @@
+{
+  "nota_general": "Valores por día. Valores dentro de Los Ángeles. Para otros sectores, solicitar cotización.",
+  "moneda": "CLP",
+  "simbolo": "$",
+
+  "juegos_individuales": [
+    {
+      "nombre": "Arco de Fútbol",
+      "imagen": "assets/img/tarifas/arco.jpg",
+      "dimensiones": null,
+      "precio": 20000,
+      "periodo": null,
+      "icono": "bi-dribbble"
+    },
+    {
+      "nombre": "Cama Elástica Pequeña",
+      "imagen": "assets/img/tarifas/camaelasticaPeq.jpg",
+      "dimensiones": "Diámetro: 2 metros",
+      "precio": 25000,
+      "periodo": null,
+      "icono": "bi-arrow-up-circle"
+    },
+    {
+      "nombre": "Cama Elástica Grande",
+      "imagen": "assets/img/tarifas/camaelasticaGrande.jpg",
+      "dimensiones": "Diámetro: 5 metros",
+      "precio": 40000,
+      "periodo": null,
+      "icono": "bi-arrow-up-circle-fill"
+    },
+    {
+      "nombre": "Juego Inflable XL",
+      "imagen": "assets/img/tarifas/juegoinflableXL.jpeg",
+      "dimensiones": "7.5 Largo × 4.5 Ancho × 6.5 Altura mts",
+      "precio": 80000,
+      "periodo": null,
+      "icono": "bi-rocket"
+    },
+    {
+      "nombre": "Juego Inflable Mediano",
+      "imagen": "assets/img/tarifas/juegoinflableMed.jpg",
+      "dimensiones": "6 Largo × 5 Ancho × 3.5 Altura mts",
+      "precio": 60000,
+      "periodo": null,
+      "icono": "bi-rocket-takeoff"
+    },
+    {
+      "nombre": "Taca Taca Adulto",
+      "imagen": "assets/img/tarifas/tacataca.jpg",
+      "dimensiones": null,
+      "precio": 20000,
+      "periodo": null,
+      "icono": "bi-controller"
+    }
+  ],
+
+  "kits_cumpleanos": [
+    {
+      "nombre": "Kit 1",
+      "subtitulo": "La Fiesta Completa",
+      "incluye": [
+        "Inflable XL",
+        "Cama Elástica 2m",
+        "Taca Taca"
+      ],
+      "precio": 110000,
+      "destacado": false
+    },
+    {
+      "nombre": "Kit 2",
+      "subtitulo": "Diversión Familiar",
+      "incluye": [
+        "Inflable Mediano",
+        "Cama Elástica 2m",
+        "Taca Taca"
+      ],
+      "precio": 90000,
+      "destacado": true
+    },
+    {
+      "nombre": "Kit 3",
+      "subtitulo": "Cumpleaños Deportivo",
+      "incluye": [
+        "Cama Elástica 2m",
+        "Arco de Fútbol"
+      ],
+      "precio": 40000,
+      "destacado": false
+    },
+    {
+      "nombre": "Kit 4",
+      "subtitulo": "Cumpleaños Clásico",
+      "incluye": [
+        "Cama Elástica 2m",
+        "Taca Taca Adulto"
+      ],
+      "precio": 40000,
+      "destacado": false
+    }
+  ]
+}
