@@ -1,7 +1,8 @@
 # ELMUNDODERAFA.md — Registro de migración de elmundoderafa.cl
 **Cliente:** El Mundo de Rafa (juegos inflables, Los Ángeles). Proyecto apoyado por SERCOTEC.  
 **Sitio actual:** https://elmundoderafa.cl (Bluehost, cuenta `vilchesc`)  
-**Repo:** `D:\DEV\Web\ClaudeCode\GitHub\lvilchesa\elmundoderafa\` → destino **github.com/lvilchesa/elmundoderafa**  
+**Repo:** `D:\DEV\Web\ClaudeCode\GitHub\lvilchesa\elmundoderafa\` → **github.com/lvilchesa/elmundoderafa** (público)  
+**Revisión:** https://lvilchesa.github.io/elmundoderafa/ (GitHub Pages, 25-sep-2026, sin dominio propio todavía)  
 **Documentación del desarrollo** (secciones, galería, tarifas, FormSubmit): `D:\DEV\Web\ClaudeCode\ElMundodeRafa\ElMundodeRafa.md`  
 **Última actualización:** 2026-09-25
 
@@ -9,7 +10,7 @@
 
 ## ▶ Punto de retomada
 
-**Estado:** la copia local es **idéntica al sitio publicado** (comprobado archivo por archivo el 25-sep-2026: `index.html`, `styles.css`, `tarifas.json` y 59 imágenes). Se hizo una limpieza sin cambios visibles y quedó commit local. **Falta crear el repo en GitHub** (lo hace Gonzalo: el token no crea repos) y seguir `PROTOCOLO-MIGRACION-GHPAGES.md`.
+**Estado:** la copia local es **idéntica al sitio publicado** (comprobado archivo por archivo el 25-sep-2026: `index.html`, `styles.css`, `tarifas.json` y 59 imágenes). Se hizo una limpieza sin cambios visibles. **Fase 1 lista:** subido y publicado en https://lvilchesa.github.io/elmundoderafa/ (probado: tarifas, 10 tarjetas, galería con las 44 fotos en sus 3 grupos, sin errores). **Siguiente: fase 2**, Gonzalo agrega `elmundoderafa.cl` en Cloudflare y Claude arma el molde. Ver `PROTOCOLO-MIGRACION-GHPAGES.md`.
 
 **Para editar precios:** solo `assets/data/tarifas.json` (las tarjetas se generan desde ahí).
 **Para agregar fotos a la galería:** `assets/img/galeria/galeria_NNN.jpeg` + actualizar `const totalFotos` al final de `index.html`.
