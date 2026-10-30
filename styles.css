@@ -725,3 +725,17 @@ footer p {
         max-width: 320px;
     }
 }
+/* Aviso de WhatsApp antes de los botones «Pagar en línea» */
+.nota-whatsapp {
+    border-left-color: #25d366;
+}
+
+.nota-whatsapp .bi-whatsapp {
+    color: #25d366;
+    font-size: 1.1rem;
+}
+
+.nota-whatsapp a {
+    font-weight: 600;
+    white-space: nowrap;
+}
