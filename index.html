@@ -388,6 +388,12 @@
                 // Formato de precio — usa el símbolo y moneda definidos en el JSON
                 const fmt = (n) => data.simbolo + n.toLocaleString('es-CL');
 
+                // Botón de pago — solo aparece si el ítem tiene "link_pago" en el JSON (link de Haulmer)
+                const botonPago = (item) => item.link_pago
+                    ? `<a href="${item.link_pago}" target="_blank" rel="noopener" class="btn btn-primary btn-sm mt-3 align-self-center">
+                           <i class="bi bi-credit-card me-1"></i>Pagar en línea</a>`
+                    : '';
+
                 // ── JUEGOS INDIVIDUALES ────────────────────────────────
                 // Cada juego se convierte en una card col-md-4 col-sm-6
                 const contJuegos = document.getElementById('juegos-individuales');
@@ -417,6 +423,7 @@
                                 <div class="card-body d-flex flex-column justify-content-center">
                                     ${dimensiones}
                                     <p class="precio-destacado mt-2 mb-0">${fmt(juego.precio)} ${periodo}</p>
+                                    ${botonPago(juego)}
                                 </div>
                             </div>
                         </div>`;
@@ -441,6 +448,7 @@
                                 <div class="card-body">
                                     <ul class="list-unstyled text-start mb-3">${items}</ul>
                                     <p class="precio-destacado mb-0">${fmt(kit.precio)}</p>
+                                    ${botonPago(kit)}
                                 </div>
                             </div>
                         </div>`;

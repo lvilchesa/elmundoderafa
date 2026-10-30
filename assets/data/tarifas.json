@@ -9,6 +9,7 @@
       "imagen": "assets/img/tarifas/arco.jpg",
       "dimensiones": null,
       "precio": 20000,
+      "link_pago": "",
       "periodo": null,
       "icono": "bi-dribbble"
     },
@@ -17,6 +18,7 @@
       "imagen": "assets/img/tarifas/camaelasticaPeq.jpg",
       "dimensiones": "Diámetro: 2 metros",
       "precio": 25000,
+      "link_pago": "",
       "periodo": null,
       "icono": "bi-arrow-up-circle"
     },
@@ -25,6 +27,7 @@
       "imagen": "assets/img/tarifas/camaelasticaGrande.jpg",
       "dimensiones": "Diámetro: 5 metros",
       "precio": 40000,
+      "link_pago": "",
       "periodo": null,
       "icono": "bi-arrow-up-circle-fill"
     },
@@ -33,6 +36,7 @@
       "imagen": "assets/img/tarifas/juegoinflableXL.jpeg",
       "dimensiones": "7.5 Largo × 4.5 Ancho × 6.5 Altura mts",
       "precio": 80000,
+      "link_pago": "",
       "periodo": null,
       "icono": "bi-rocket"
     },
@@ -41,6 +45,7 @@
       "imagen": "assets/img/tarifas/juegoinflableMed.jpg",
       "dimensiones": "6 Largo × 5 Ancho × 3.5 Altura mts",
       "precio": 60000,
+      "link_pago": "",
       "periodo": null,
       "icono": "bi-rocket-takeoff"
     },
@@ -49,6 +54,7 @@
       "imagen": "assets/img/tarifas/tacataca.jpg",
       "dimensiones": null,
       "precio": 20000,
+      "link_pago": "",
       "periodo": null,
       "icono": "bi-controller"
     }
@@ -64,6 +70,7 @@
         "Taca Taca"
       ],
       "precio": 110000,
+      "link_pago": "",
       "destacado": false
     },
     {
@@ -75,6 +82,7 @@
         "Taca Taca"
       ],
       "precio": 90000,
+      "link_pago": "",
       "destacado": true
     },
     {
@@ -85,6 +93,7 @@
         "Arco de Fútbol"
       ],
       "precio": 40000,
+      "link_pago": "",
       "destacado": false
     },
     {
@@ -95,6 +104,7 @@
         "Taca Taca Adulto"
       ],
       "precio": 40000,
+      "link_pago": "",
       "destacado": false
     }
   ]
